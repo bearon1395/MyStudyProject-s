@@ -1,0 +1,122 @@
+body {
+    overflow-x: hidden;
+}
+
+.in_head {
+    max-width: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 700px;
+    background-image: url(../img/fullimage1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.title_wrap {
+    text-align: center;
+}
+
+.title_wrap h1 {
+    color: #fff;
+    font-size: 90px;
+    padding-top: 300px;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.main-sect {
+    width: 100%;
+    height: 100%;
+    background-color: #CFE3E1;
+    padding-top: 50px;
+}
+
+.ad_logo {
+    width: 120px;
+    display: block;
+    margin: auto;
+}
+
+.ad_cont_prew h1 {
+    text-align: center;
+    margin-bottom: 150px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ad_cont {
+    text-align: center;
+    margin-left: 122px;
+    margin-right: 122px;
+}
+
+.ad_cont h1 {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+}
+
+.ad_cont p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding-bottom: 45px;
+}
+
+.bottom_sect {
+    padding-top: 60px;
+    background-color: #FFF5EE;
+}
+
+.bottom_logo {
+    width: 648px;
+    display: block;
+    padding-right: 107px;
+}
+
+.bottom_sect p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.bottom_sect a {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+.bt_text {
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    clear: both;
+    text-align: center;
+    background-color: #144243;
+}
+
+footer p {
+    padding-top: 10px;
+    display: inline-block;
+    margin-right: 50px;
+    text-align: left;
+    color: #6C7A83;
+    font-family: 'Ubuntu', sans-serif;
+}
