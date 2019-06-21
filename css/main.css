@@ -1,0 +1,14 @@
+#createReviewForm .form-item {
+    display: block;
+    margin-bottom: 10px;
+}
+#paginationTable th, td {
+    border: 1px solid;
+    color: black;
+}
+
+
+#analyticsTable th, td {
+    border: 1px solid;
+    color: black;
+}
