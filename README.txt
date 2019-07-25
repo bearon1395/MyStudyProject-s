@@ -9,7 +9,7 @@ For work, you need to make some settings such as:
 - husk 
 - soil )
 
-2. Choose and create - WorkingTower and WheatDryer using their fibric.
+2. Choose and create - WorkingTower and WheatDryer using their fabric.
 3. Create Elevator and set parameters above.
 3.1 Set Storage Bins with space.
 
