@@ -9,12 +9,12 @@ abstract class WheatDryer
     public $air;
     public $cleanRaw = [];
 
-    abstract protected function drying(array $cleanRaw);
+    abstract function drying(array $cleanRaw);
 
 
-    abstract protected function onFan();
+    abstract function onFan();
 
 
-    abstract protected function offFan();
+    abstract function offFan();
 
 }

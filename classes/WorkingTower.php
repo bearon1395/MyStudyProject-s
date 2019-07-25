@@ -9,11 +9,11 @@ abstract class WorkingTower
     public $husk = [];
     public $soil = [];
 
-    abstract protected function purification(array $feedstock);
+    abstract function purification(array $feedstock);
 
 
-    abstract protected function getHusk();
+    abstract function getHusk();
 
-    abstract protected function getSoil();
+    abstract function getSoil();
 
 }

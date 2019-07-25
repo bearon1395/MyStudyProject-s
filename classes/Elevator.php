@@ -17,7 +17,7 @@ class Elevator
     private $husk;
     private $soil;
 
-    public function __construct($raw, $workingTower, $wheatDryer)
+    public function __construct($raw, WorkingTower $workingTower, WheatDryer $wheatDryer)
     {
         $this->raw = $raw;
         $this->workingTower = $workingTower;
@@ -48,7 +48,6 @@ class Elevator
         $this->rawChecking();
 
         //1. Raw cleaning.
-        $WorkingTower = $this->workingTower;
 
         echo "1) Raw cleaning:</br>";
         echo "Refined wheat:</br>";
