@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-class MainScreen extends StatefulWidget {
+class SecondScreen extends StatefulWidget {
   @override
-  State<MainScreen> createState() => _BackgroundSwitcher();
+  State<SecondScreen> createState() => _BackgroundSwitcher();
 }
 
-class _BackgroundSwitcher extends State<MainScreen> {
+class _BackgroundSwitcher extends State<SecondScreen> {
   final rng = new Random();
   int bgcolor = 0xFF000000; //first color for background
 
@@ -18,11 +18,11 @@ class _BackgroundSwitcher extends State<MainScreen> {
         onTap: () {
           setState(() {
             bgcolor = 0xFF000000 +
-                rng.nextInt(0xFFFFFF); //set random color for background
+                rng.nextInt(0xFFFFFF); //generate random color for background
           });
         },
         child: Container(
-          color: Color(bgcolor),
+          color: Color(bgcolor), //set random color for background
           child: Center(
             child: Text(
               'Hey there',
