@@ -1,0 +1,443 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+a {
+    font-family: "Brandon Grotesque";
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/*Navigation*/
+.site-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: #343C4A;
+    flex-basis: 140px;
+}
+.site-header a {
+    color: white;
+    text-align: center;
+    display: block;
+}
+.logo {
+    padding: 15px 25px 15px 70px;
+    flex-shrink: 0;
+}
+.logo a {
+    font-family: Tw Cen MT;
+    font-size: 30px;
+    line-height: 33px;
+    color: #00D053;
+}
+
+.navigation {
+    display: flex;
+    /*padding: 0 25px;*/
+    align-items: center;
+    /*max-width: 606px;*/
+    margin: auto;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    width: 101px;
+    margin: auto;
+    flex-shrink: 1;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+.navbar-search img {
+    padding-top: 5px;
+}
+.user-text {
+    font-family: Brandon Grotesque;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+.user-icon {
+    padding-left: 10px;
+    padding-right: 70px;
+    padding-top: 5px;
+}
+.user-icon img {
+    border-radius: 50px;
+    width: 28px;
+}
+/**/
+/**/
+#check-menu {
+    display: none;
+}
+.site-header label {
+    display: none;
+    font-family: Brandon Grotesque;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 990px) {
+    .site-header {
+        flex-direction: row !important;
+    }
+    .user {
+        display: none;
+    }
+    .site-header label{
+        display: block;
+        text-align: right;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-right: 45px;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 40px;
+    }
+    .navigation {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: .5s all;
+    }
+    .navigation a{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+        border-top: 1px solid rgba(255,255,255,.3);
+        background-color: #343C4A;
+    }
+
+    .navigation a:hover{
+        background-color: rgba(0,0,0,.99);
+    }
+    #check-menu:checked ~ .navigation{
+        max-height: 500px;
+        font-size: 16px;
+    }
+}
+
+
+/*Banner*/
+.banner {
+    background: url("../img/oshin-khandelwal-449410-unsplash.webp");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.banner .overlay {
+    background: rgba(52, 60, 74, 0.39);
+}
+.banner-content {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1120px;
+    padding: 65px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-left {
+    width: 579px;
+    padding-top: 56px;
+    padding-right: 185px;
+    align-self: flex-start;
+}
+.content-left h1 {
+    margin: 0 0 40px 0;
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.content-left p {
+    max-width: 497px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #F5F5F5;
+}
+
+.form-trial {
+    width: 356px;
+    height: 520px;
+    right: 0;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 4px 28px rgba(6, 6, 90, 0.06);
+    border-radius: 5px;
+}
+.form_trial h1 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    padding: 46px 38px 10px 38px;
+    margin: 0;
+}
+
+
+.inputs,
+.inputs lable {
+    text-align: center;
+    display: block;
+    margin: 10px 0 2px 0;
+}
+
+.inputs lable {
+    font-family: "Brandon Grotesque";
+    text-align: left;
+    padding-left: 38px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #B4B4B4;
+}
+
+.inputs input {
+    width: 276px;
+    height: 46px;
+    padding: 0;
+    background: #F8F8F8;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+
+#send {
+    width: 280px;
+    height: 50px;
+    margin-top: 38px;
+    background: #FFFFFF;
+    border: 2px solid #00D053;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Brandon Grotesque";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    color: #00D053;
+}
+/**/
+/*Gallery*/
+.section-gallery .content .title{
+    font-family: Brandon Grotesque;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 71px;
+    /* identical to box height */
+    text-align: center;
+    padding: 120px 0 10px 0;
+}
+.section-gallery .content p {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    max-width: 793px;
+    /*padding-bottom: 50px;*/
+    padding-bottom: 44px;
+    margin: auto;
+}
+.gallery {
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: colum;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+.gallery a {
+    -ms-flex: auto;
+    flex: auto;
+    width: 24vw;
+    margin: 0;
+    margin-top: -6px;
+    padding: 0;
+}
+.gallery a img {
+    width: 100%;
+    height: auto;
+}
+.full {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8%;
+    background: #CCC center no-repeat;
+    background: rgba(0, 0, 0, 0.5) center no-repeat;
+    background-size: 70%;
+    background-origin: content-box;
+}
+.gallery a:focus + .full {
+    display: block;
+    width: auto;
+}
+
+/*Contacts*/
+.section-contacts {
+    width: 100%;
+    padding-bottom: 120px;
+}
+.section-contacts h2 {
+    font-size: 50px;
+    line-height: 71px;
+    display:block;
+    text-align: center;
+    padding: 120px 0 50px 0;
+
+}
+.contact-map {
+    display: flex;
+    flex-shrink: 1;
+    flex-basis: 890px;
+    height: 364px;
+
+}
+.contact-map iframe {
+    display: flex;
+    flex-shrink: 1;
+    flex-basis: 890px;
+    height: 365px;
+}
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-contacts {
+    padding-left: 30px;
+    align-self: flex-start;
+}
+
+.contact-contacts .title {
+    font-family: "Brandon Grotesque";
+    font-size: 28px;
+    line-height: 40px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+.contacts p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+}
+.contacts td:nth-child(even) {
+    padding-left: 10px;
+    padding-bottom: 13px;
+    max-width: 166px;
+}
+.contacts td:nth-child(odd){
+    vertical-align: top;
+    text-align: center;
+    padding-top: 7px;
+}
+.contacts a {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+}
+/**/
+
+/*Footer*/
+footer {
+    min-height: 263px;
+    background: url("../img/oshin-khandelwal-586696-unsplash.webp");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+footer .overlay {
+    width: 100%;
+    height: 100%;
+    min-height: 263px;
+    background-color: rgba(52, 60, 74, 0.6);
+}
+.subscribe {
+    text-align: center;
+    font-family: "Brandon Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 43px;
+    padding: 80px 0 40px 0;
+    color: #FFFFFF;
+}
+.social_networks {
+    display: flex;
+
+    justify-content: center;
+}
+.social_networks a {
+    padding: 0 20px;
+}
+/**/
+
+@media screen and (max-width: 990px) {
+    .site-header {
+        flex-direction: column;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*Banner*/
+    .banner-content {
+        flex-direction: column;
+    }
+    .content-left {
+        align-self: center;
+        width: auto;
+        padding: 56px 0;
+    }
+    .content-left h1 {
+        font-size: 70px;
+    }
+
+    /*Gallery*/
+    .gallery a {
+        width: 400px;
+    }
+    /*Contacts*/
+    .contacts {
+        flex-direction: column;
+    }
+    .contact-map {
+        flex-basis: inherit;
+        padding: 0 30px;
+    }
+}
