@@ -1,5 +1,5 @@
 # MyStudyProject-s
-![fullpage](https://github.com/bearon1395/MyStudyProject-s/new/landing_art_clay/fullpage.png)
+<img src="/bearon1395/MyStudyProject-s/blob/landing_art_clay/fullpage.png" alt="fullpage.png" style="width: 100%;">
 
 This site have 2-step validation.
 1. Validate on client before send data (js).
