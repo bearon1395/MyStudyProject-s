@@ -1,0 +1,47 @@
+.content {
+  max-width: 1180px;
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+/* Products */
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.procucts-list ol {
+  padding-inline-start: 0px;
+}
+
+.procucts-list li {
+  padding: 20px;
+  list-style-type: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #F7F5FB;
+}
+
+.product-specification {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+/* Add Form */
+.add-form {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+.add-form form label {
+  padding-top: 10px;
+}
+.add-form form input {
+  display: block;
+}
+
+.add-form input:nth-of-type(2) {
+  min-height: 40px;
+  height: auto;
+}
+
